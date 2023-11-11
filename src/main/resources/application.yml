@@ -1,0 +1,31 @@
+server:
+  port: 8080
+
+springdoc:
+  swagger-ui:
+    path: /swagger
+    default-models-expand-depth: -1
+
+spring:
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/bae_careers_db"
+    username: postgres
+    password: postgres
+  jackson:
+    default-property-inclusion: non_empty
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  application:
+    name: "BAE Careers REST Service"
+    version: "1.0.0"
+    description: "This API exposes endpoints to manage BAE jobs."
+
+logging:
+  file:
+    name: logs/myapp.log
