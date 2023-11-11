@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: {{.Values.appName}}
+  name: {{.Values.appName}}
+spec:
+  replicas: {{.Values.replicas}}
+  selector:
+    matchLabels:
+      app: {{.Values.appName}}
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: {{.Values.appName}}
+    spec:
+      containers:
+        - image: {{.Values.imageName}}
+          name: {{.Values.appName}}-{{randAlpha 5 | lower}}
+          command: ["java", "-jar", "/bae-careers-1.0.0-SNAPSHOT.jar"]
+          args: ["--spring.datasource.url=jdbc:postgresql://$(POSTGRES_IP):$(POSTGRES_PORT)/bae_careers_db"]
+          env:
+            - name: POSTGRES_IP
+              value: "10.96.26.155"
+            - name: POSTGRES_PORT
+              value: "5432"
+          ports:
+            - containerPort: {{.Values.targetPort}}
