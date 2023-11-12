@@ -22,8 +22,8 @@ spec:
           args: ["--spring.datasource.url=jdbc:postgresql://$(POSTGRES_IP):$(POSTGRES_PORT)/bae_careers_db"]
           env:
             - name: POSTGRES_IP
-              value: {{.Values.postgresIP}}
+              value: "10.96.26.155"
             - name: POSTGRES_PORT
-              value: {{.Values.postgresPort}}
+              value: "5432"
           ports:
             - containerPort: {{.Values.targetPort}}
