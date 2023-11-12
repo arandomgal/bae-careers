@@ -6,7 +6,6 @@ metadata:
   name: {{.Values.appName}}
 spec:
   replicas: {{.Values.replicas}}
-  revisionHistoryLimit: {{.Values.revisionHistoryLimit}}
   selector:
     matchLabels:
       app: {{.Values.appName}}
