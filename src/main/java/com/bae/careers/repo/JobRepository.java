@@ -13,4 +13,5 @@ public interface JobRepository extends CrudRepository<Job, Integer> {
     List<Job> findJobsByLocation(Location location);
     List<Job> findJobsByLevel(Level level);
     List<Job> findJobsByMode(Mode mode);
+    List<Job> findJobsByLevelAndLocationAndMode(Level level, Location location, Mode mode);
 }
