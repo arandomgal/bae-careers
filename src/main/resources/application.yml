@@ -23,7 +23,7 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
   application:
     name: "BAE Careers REST Service"
-    version: "1.0.1"
+    version: "1.0.2"
     description: "This API exposes endpoints to manage BAE jobs."
 
 logging:
