@@ -1,5 +1,5 @@
 appName: bae-careers-rest-api
-imageName: ymandrews/bae-careers-rest-api:1.0.2
+imageName: ymandrews/bae-careers-rest-api:1.0.3
 replicas: 2
 serviceName: bae-careers-rest-api-svc
 hostName: api.careers.baesystems.com
