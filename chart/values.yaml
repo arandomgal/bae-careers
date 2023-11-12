@@ -6,4 +6,6 @@ hostName: api.careers.bae.com
 sourcePort: 8080
 targetPort: 8080
 nodePort: 30003
+postgresIP: 10.96.26.155
+postgresPort: 5432
 
