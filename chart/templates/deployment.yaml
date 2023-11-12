@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - image: {{.Values.imageName}}
-          name: {{.Values.appName}}-{{randAlpha 5 | lower}}
+          name: {{.Values.appName}}
           command: ["java", "-jar", "/bae-careers-1.0.2-SNAPSHOT.jar"]
           args: ["--spring.datasource.url=jdbc:postgresql://$(POSTGRES_IP):$(POSTGRES_PORT)/bae_careers_db"]
           env:
