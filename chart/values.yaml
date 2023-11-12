@@ -2,7 +2,7 @@ appName: bae-careers-rest-api
 imageName: ymandrews/bae-careers-rest-api:1.0.2
 replicas: 1
 serviceName: bae-careers-rest-api-svc
-hostName: api.careers.bae.com
+hostName: api.careers.baesystems.com
 sourcePort: 8080
 targetPort: 8080
 nodePort: 30003
