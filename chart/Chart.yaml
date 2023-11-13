@@ -1,5 +1,0 @@
-apiVersion: v2
-name: bae-careers-rest-service
-version: 1.0.3
-deprecated: false
-appVersion: 1.0.3
