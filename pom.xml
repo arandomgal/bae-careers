@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.bae.careers</groupId>
     <artifactId>bae-careers</artifactId>
-    <version>1.0.4-SNAPSHOT</version>
+    <version>1.0.5-SNAPSHOT</version>
     <name>bae-careers</name>
     <description>BAE Careers Web Service</description>
     <properties>

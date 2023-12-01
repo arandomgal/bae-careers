@@ -1,5 +1,5 @@
 #!/bin/sh
-tag="1.0.4"
+tag="1.0.5"
 echo "Build new artifact for BAE Careers REST API release:$tag"
 echo "==> Step 1: Build Jar file."
 mvn clean install -DskipTests
